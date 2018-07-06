@@ -14,14 +14,15 @@ Summary: Various objects to denote special meanings in python
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/sentinels-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/sentinels-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/sentinels-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/sentinels-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/sentinels-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/sentinels-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/sentinels-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/sentinels-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sentinels/badges/version.svg)](https://anaconda.org/conda-forge/sentinels)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sentinels/badges/downloads.svg)](https://anaconda.org/conda-forge/sentinels)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-sentinels-green.svg)](https://anaconda.org/conda-forge/sentinels) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sentinels.svg)](https://anaconda.org/conda-forge/sentinels) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sentinels.svg)](https://anaconda.org/conda-forge/sentinels) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sentinels.svg)](https://anaconda.org/conda-forge/sentinels) |
 
 Installing sentinels
 ====================
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
