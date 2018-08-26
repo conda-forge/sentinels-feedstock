@@ -1,25 +1,26 @@
-{%set name = "sentinels" %}
-{%set version = "1.0.0" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "7be0704d7fe1925e397e92d18669ace2f619c92b5d4eb21a89f31e026f9ff4b1" %}
+{% set name = "sentinels" %}
+{% set version = "1.0.0" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "7be0704d7fe1925e397e92d18669ace2f619c92b5d4eb21a89f31e026f9ff4b1" %}
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
 
   run:
     - python
@@ -34,6 +35,7 @@ about:
   license_file: LICENSE
   license_family: BSD
   summary: 'Various objects to denote special meanings in python'
+  dev_url: https://github.com/vmalloc/sentinels
 
 extra:
   recipe-maintainers:
