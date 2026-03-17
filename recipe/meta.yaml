@@ -1,8 +1,7 @@
 {% set name = "sentinels" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.1" %}
 {% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "7be0704d7fe1925e397e92d18669ace2f619c92b5d4eb21a89f31e026f9ff4b1" %}
+{% set hash_val = "3c2f64f754187c19e0a1a029b148b74cf58dd12ec27b4e19c0e5d6e22b5a9a86" %}
 
 package:
   name: {{ name|lower }}
@@ -10,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash_val }}
+  sha256: {{ hash_val }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
