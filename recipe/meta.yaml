@@ -1,5 +1,6 @@
 {% set name = "sentinels" %}
 {% set version = "1.1.1" %}
+{% set python_min = "3.9" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash_val = "3c2f64f754187c19e0a1a029b148b74cf58dd12ec27b4e19c0e5d6e22b5a9a86" %}
