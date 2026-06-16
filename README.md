@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sentinels-feeds
 
 Home: https://github.com/vmalloc/sentinels
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Summary: Various objects to denote special meanings in python
 
@@ -146,5 +146,8 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@killua156](https://github.com/killua156/)
+* [@mgorny](https://github.com/mgorny/)
+* [@pb01ka](https://github.com/pb01ka/)
 * [@pmlandwehr](https://github.com/pmlandwehr/)
 
